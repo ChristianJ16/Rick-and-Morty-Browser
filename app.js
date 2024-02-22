@@ -1,5 +1,9 @@
 window.onload = (e) => {
-  fetch('https://rickandmortyapi.com/api/character/2').then(
+  document.querySelector('form').addEventListener('submit',(e) => {
+    e.preventDefault()
+    const userInput = document.querySelector('input[type="text"]').value
+
+    fetch('https://rickandmortyapi.com/api/episode/' + userInput).then(
     (data) => {
     return data.json()
   }, 
@@ -11,14 +15,17 @@ window.onload = (e) => {
       console.log(json)
       const name = document.querySelector('#name')
       name.innerText = json.name
-      const status = document.querySelector('#status')
-      status.innerText = json.status
-      const species = document.querySelector('#species')
-      species.innerText = json.species
+      const air_date = document.querySelector('#air_date')
+      air_date.innerText = json.air_date
+      const episode = document.querySelector('#episode')
+      episode.innerText = json.episode
     },
     (err) => {
       console.log(err)
     }
   )
+  })
+
+  
 
 }
