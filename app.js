@@ -1,4 +1,4 @@
-window.onload = (e) => {
+
   document.querySelector('form').addEventListener('submit',(e) => {
     e.preventDefault()
     const userInput = document.querySelector('input[type="text"]').value
@@ -22,7 +22,24 @@ window.onload = (e) => {
     },
     (err) => {
       console.log(err)
-    }
-  )
+    })
   })
-}
+
+
+document.addEventListener("DOMContentLoaded", function(){
+  const button = document.getElementById("randomImageButton")
+  const image = document.getElementById("randomImage")
+  button.addEventListener("click", function() {
+    const images = [
+      "rick-and-morty-30973.png",
+      "rick-and-morty-30991.png",
+      "rick-and-morty-30998.png",
+      "rick-and-morty-31012.png",
+      "rick-and-morty-31015.png",
+      "rick-and-morty-31043.png",
+    ]
+    const randomIndex = Math.floor(Math.random() * images.length)
+    const randomImage = images[randomIndex]
+    image.src = "/Users/christianjansen/Desktop/mini-project/imgs/" + randomImage
+  })
+})

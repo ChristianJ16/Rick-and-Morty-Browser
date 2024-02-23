@@ -24,3 +24,17 @@ body {
   justify-content: center;
   align-items: flex-start;
 }
+
+#random-picture {
+  display:flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+#imageContainer {
+  margin-top: 20px;
+}
+
+#randomImage {
+  max-width: 400px;
+  max-height: 400px;
+}
