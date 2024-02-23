@@ -1,3 +1,26 @@
 body {
   background-color: pink;
 }
+.searchbar {
+  display:flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.episode-info {
+  display:flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.info-list {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+#rick-and-morty {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}

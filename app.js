@@ -25,7 +25,4 @@ window.onload = (e) => {
     }
   )
   })
-
-  
-
 }
