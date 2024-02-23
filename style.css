@@ -31,10 +31,22 @@ body {
   align-items: flex-start;
 }
 #imageContainer {
+  display:flex;
+  justify-content: center;
+  align-items: flex-start;
   margin-top: 20px;
 }
 
 #randomImage {
   max-width: 400px;
   max-height: 400px;
+}
+
+#randomButton {
+  display:flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+dt {
+  color: green;
 }
