@@ -13,24 +13,20 @@
   ).then(
     (json) => {
       console.log(json)
-      const name = document.querySelector('#name') // key from API
-      name.innerText = json.name
-      const air_date = document.querySelector('#air_date') // key from API
-      air_date.innerText = json.air_date
-      const episode = document.querySelector('#episode') // key from API
-      episode.innerText = json.episode
+      document.querySelector('#name').innerText = json.name
+      document.querySelector('#air_date').innerText = json.air_date
+      document.querySelector('#episode').innerText = json.episode
     },
     (err) => {
       console.log(err) // console log if error
     })
   })
 
-
 document.addEventListener("DOMContentLoaded", function(){ // listens for when the HTML document has finished loading
-  const button = document.getElementById("randomImageButton")
-  const image = document.getElementById("randomImage")
+  const button = document.getElementById("randomImageButton") // selects the button element with the ID "randomImageButton"
+  const image = document.getElementById("randomImage") // selects the image element with the ID "randomImage"
   button.addEventListener("click", function() { 
-    const images = [ // array of the images
+    const images = [ // array of the image URLs
     "https://www.freepnglogos.com/uploads/rick-and-morty-png/list-rick-and-morty-episodes-wikipedia-24.png",
     "https://www.freepnglogos.com/uploads/rick-and-morty-png/rick-and-morty-portal-moon-mod-download-35.png",
     "https://www.freepnglogos.com/uploads/rick-and-morty-png/rick-and-morty-mind-bending-season-mysteries-quidd-6.png",
