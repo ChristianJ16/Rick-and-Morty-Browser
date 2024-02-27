@@ -9,7 +9,7 @@ body {
 
 .episode-info {
   display:flex;
-  justify-content: center;
+  justify-content: center; 
   align-items: flex-start;
   font-family: "VT323", monospace;
   font-size: 28px
