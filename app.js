@@ -13,15 +13,15 @@
   ).then(
     (json) => {
       console.log(json)
-      const name = document.querySelector('#name')
+      const name = document.querySelector('#name') // key from API
       name.innerText = json.name
-      const air_date = document.querySelector('#air_date')
+      const air_date = document.querySelector('#air_date') // key from API
       air_date.innerText = json.air_date
-      const episode = document.querySelector('#episode')
+      const episode = document.querySelector('#episode') // key from API
       episode.innerText = json.episode
     },
     (err) => {
-      console.log(err)
+      console.log(err) // console log if error
     })
   })
 
